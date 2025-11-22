@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAIR PLAY</title>
+
+  <meta name="author" content="Yusuf Ragheb">
+  <meta name="description" content="Experience the thrill of random team pickups and draws with FAIR PLAY™. Perfect for football enthusiasts looking to spice up their game nights!">
+  <meta name="keywords" content="FAIR PLAY, random teams, pickup, draws, football, game nights">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <link rel="icon" type="image/png" href="pngkit_champions-league-png_10092892.png">
+
+<meta property="og:url" content="https://fairplay.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FAIR PLAY™ - Random Teams Pickup & Draws">
+  <meta property="og:description" content="Experience the thrill of random team pickups and draws with FAIR PLAY™. Perfect for football enthusiasts looking to spice up their game nights!">
+  <meta property="og:image" content="https://fairplay.com/og-image.png">
+  <meta property="og:site_name" content="FAIR PLAY™">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:video" content="https://fairplay.com/og-video.mp4">
+  <meta property="og:audio" content="https://fairplay.com/og-audio.mp3">
+  <meta property="og:article:author" content="Yusuf Ragheb">
+  <meta property="og:article:section" content="Sports">
+  <meta property="og:article:tag" content="FAIR PLAY, random teams, pickup, draws, football, game nights">
+  <meta property="og:updated_time" content="2025-10-18T12:00:00+02:00">
+  <meta property="og:determiner" content="the">
+  <meta property="og:article:published_time" content="2025-10-18T12:00:00+02:00">
+  <meta property="og:article:modified_time" content="2025-10-18T12:00:00+02:00">
+  <meta property="og:see_also" content="https://fairplay.com/related-page">
+  <meta property="og:video:secure_url" content="https://fairplay.com/og-video.mp4">
+  <meta property="og:audio:secure_url" content="https://fairplay.com/og-audio.mp3">
+  <meta property="og:image:alt" content="FAIR PLAY™ Logo">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:audio:type" content="audio/mpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <meta property="og:audio:width" content="300">
+  <meta property="og:audio:height" content="100">
+  
+
+  <link rel="stylesheet" href="genrator.css">
+
+
+
+</head>
+
+
+
+<b><h1 id="fair-play-title">FAIR PLAY<sup>™</sup></h1></b>
+
+
+
+  <!-- Background video -->
+  <video id="background-video" autoplay muted loop>
+    <source src="SSvid.net--UEFA-Champions-League-Anthem_1080.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+  <fieldset id="pickup-and-draws">
+    <div>
+
+      <h3 style="font: 1em sans-serif;">FAIR PLAY<sup>™</sup></h3>
+
+
+      <h1 style="text-align: center; color:aqua " >🎲Random teams pickup & draws🎲</h1>
+
+      <div id="buttons" style="text-align: center">
+
+
+        <hr background-color="rgba(0, 0, 0, 0.25)">
+
+        <div>
+          <button id="generate-btn"
+            onclick="startDrawAnimationSequence(),openPopup(),team1Generator(),team2Generator(),logos1(),logos2(),derby()">GENERATE</button>
+          <button id="clear-btn" onclick="clearDisplay()">CLEAR</button>
+        </div>
+        <br>
+        <div>
+          <label id="distinct-label" for="distinct" style="font-weight: bold; color: brown;">Distinct</label>
+          <input type="checkbox" id="distinct" name="distinct">
+
+           <style>
+    /* Make the video cover the whole page */
+    #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* makes it fill the screen without stretching */
+      z-index: -1; /* sends it behind all other content */
+    }
+
+   
+
+ .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("R.png");
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+      opacity: 0; /* start hidden */
+      transition: opacity 0.5s ease;
+    }
+
+    /* When active, show the image and hide video */
+    .show-image video {
+      opacity: 0;
+    }
+
+    .show-image .bg-image {
+      opacity: 1;
+    }
+
+   
+
+    .toggle-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 18px;
+    }
+
+  </style>
+
+ <div class="bg-image"></div>
+
+  <!-- Checkbox toggle -->
+  <div class="toggle-container">
+    <label for="toggleBackground">Toggle Background</label>
+      <input type="checkbox" id="toggleBackground">
+     
+  </div>
+
+  
+
+  <script>
+    const checkboxq = document.getElementById("toggleBackground");
+    const body = document.body;
+    const backgroundVideo = document.getElementById("background-video");
+
+    checkboxq.addEventListener("change", () => {
+      if (checkboxq.checked) {
+        body.classList.add("show-image");
+        backgroundVideo.pause();
+      } else {
+        body.classList.remove("show-image");
+        backgroundVideo.play();
+      }
+    });
+  </script>
+
+          <button onclick="firstLeg()" id="legs" name="legs">First LEG</button>
+        </div>
+
+        <br>
+
+        <div id="ucl-anthem">
+          <audio autoplay loop controls style="width: 200px;">
+            <source src="yt1s.gg--UEFA-Champions-League-Anthem_320kbps.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+        </div>
+
+      </div>
+  </fieldset>
+  <br>
+  <div id="draw-team">
+    <div id="names-to-teams-form" style="text-align: center;">
+      <h3><span style="color: rgb(255, 113, 4); font-weight: bold;">Draw Teams</span></h3>
+
+      <details>
+        <summary>names to teams</summary>
+        <small>
+          <ul>
+            <form id="draw">
+              <h3 style="text-align: center; color: rgb(9, 2, 234);">Draw Teams to names</h3>
+              <label for="draw1" style="color: rgb(255, 113, 4); font-weight: bold;">no. of players:</label>
+              <input  id="players-count" type="number" name="no. of players" placeholder="Enter no. of players" min="2"
+                max="8" required>
+              <br><br>
+              <label for="draw2" style="color: rgb(255, 113, 4); font-weight: bold;">name:</label>
+              <input  id="players-names" type="text" name="players-names" placeholder="Enter the name of the player"
+                minlength="3" maxlength="20" required>
+              <br><br>
+              <button  type="button" id="draw-btn" onclick="drawPlayers() , openPopup2(),startDraw()">DRAW</button>
+              <button type="button" id="add-btn" onclick="addPlayer() , clearPlayers()">ADD</button>
+              <button type="reset" id="reset-btn" onclick="clearPlayers()">RESET</button>
+              <br><br>
+            </form>
+          </ul>
+        </small>
+      </details>
+
+    </div>
+    <div class="overlay2" id="overlay2">
+      <div class="popup2">
+        <span class="close2" onclick="closePopup2()">X</span>
+        <h3 style="color: rgb(9, 2, 234);">Draw Result</h3>
+        <hr>
+        <p id="draw-popup-result" style="font-weight: bold; color: brown;"> <span id="P1game"></span> | <span id="P2game"></span></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <audio id="ding2" src="the-sound-of-getting-a-bonus-or-extra-life-in-an-arcade-game.mp3" preload="auto" hidden></audio>
+
+
+
+
+ <div class="overlay4" id="overlay4">
+      <div class="popup4" style="color: chartreuse;">
+        <span class="close4" onclick="closePopup4()">X</span>
+        <h3 style="color: rgb(3, 255, 247);">Draw First Leg</h3>
+        <hr>
+        <p style="font-weight: bold; color: rgb(3, 213, 255);"><span>team1 </span> <span  ><b id="1draw-popup-result4" style="color: deeppink;"></b></span> <span id="result4imoji1"></span></p>
+        <p style="font-weight: bold; color: rgb(3, 213, 255);"><span>team2 </span> <span ><b id="2draw-popup-result4" style="color: deeppink;"></b></span> <span id="result4imoji2"></span></p>
+        <hr>
+
+        <p id="stadiumline"><span>First Leg On: </span>  </p>
+        <img id="stadiumphoto" src="" alt="" width="200" height="200">
+        <br>
+        <p><span id="stadiumname" style="color: deeppink;"></span></p>
+      </div>
+    </div>
+
+  <audio id="ding3" src="another-jump-version.mp3" preload="auto" hidden></audio>
+
+
+
+
+  <div id="teams-list" style="color: purple;">
+    <details id="D-list-teams" style="color: purple;">
+      <Fieldset id="teams-form" style="text-align: left">
+        <legend>all teams that are in the game</legend>
+        <summary style="text-align: center;">teams avalable</summary>
+        <i>
+        <details>
+          <summary>ARSENAL</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 1</li>
+              <li>UEFA-CUP-WINNERS'-CUP-WINS: 1</li>
+              <li>HISTORY-in-CUP-WINNERS'-CUP: 1994</li>
+              <li>STADIUM: Emirates Stadium</li>
+              <li>COUNTRY-CITY: ENGLAND - London</li>
+              <li>RIVALS: Tottenham Hotspur , Chelsea , Manchester United , West Ham United , Fulham , Crystal Palace , Brentford , Liverpool</li>
+              <li>UCL-FINALS: 1</li>
+              <li>BEST-PLAYER(S): Thierry Henry , Dennis Bergkamp , Patrick Vieira , Tony Adams , Ian Wright</li>
+              <li>TEAM-UCL-TOP-SCORER: Thierry Henry 35 GOALS</li>
+              <li>PARTICIPATIONS: 23 times</li>
+
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>AC MILAN</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 14</li>
+              <li>UCL-WINS: 7</li>
+              <li>HISTORY: 1963 , 1969 , 1989 , 1990 , 1994 , 2003 , 2007</li>
+              <li>STADIUM: Stadio San Siro</li>
+              <li>COUNTRY-CITY: ITALY - Milano</li>
+              <li>RIVALS: Inter Milan , Juventus</li>
+              <li>UCL-FINALS: 11</li>
+              <li>BEST-PLAYER(S): Paolo Maldini , Marco van Basten , Ruud Gullit , Andriy Shevchenko , Kaká , Franco Baresi</li>
+              <li>TEAM-UCL-TOP-SCORER: Filippo Inzaghi 29 GOALS , Andriy Shevchenko 29 GOALS</li>
+              <li>PARTICIPATIONS: 32 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>ATLETICO MADRID</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 7</li>
+              <li>UEL-WINS: 3</li>
+              <li>HISTORY-EUROPA-LEAGUE: 2010 , 2012 , 2018</li>
+              <li>STADIUM: Riyadh Air Metropolitano</li>
+              <li>COUNTRY-CITY: SPAIN - Madrid</li>
+              <li>RIVALS: Real Madrid , Barcelona</li>
+              <li>UCL-FINALS: 3</li>
+              <li>BEST-PLAYER(S): Fernando Torres , Antoine Griezmann</li>
+              <li>TEAM-UCL-TOP-SCORER: Antoine Griezmann 40 GOALS</li>
+              <li>PARTICIPATIONS: 22 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>BARCELONA</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 14</li>
+              <li>UCL-WINS: 5</li>
+              <li>HISTORY: 1992 , 2006 , 2009 , 2011 , 2015</li>
+              <li>STADIUM: Spotify Camp Nou</li>
+              <li>COUNTRY-CITY: SPAIN - Barcelona/Catalonya </li>
+              <li>RIVALS: Real Madrid , Espanyol , Atletico Madrid</li>
+              <li>UCL-FINALS: 8</li>
+              <li>BEST-PLAYER(S): Lionel Messi , Xavi Hernandez , Andres Iniesta , Gerard Piqué , Carles Puyol , Ronaldinho , Samuel Eto'o , Sergio Busquets , Luis Suárez</li>
+              <li>TEAM-UCL-TOP-SCORER: Lionel Messi 120 GOALS</li>
+              <li>PARTICIPATIONS: 38 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>BAYERN MUNICH</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 10</li>
+              <li>UCL-WINS: 6</li>
+              <li>HISTORY: 1974 , 1975 , 1976 , 2001 , 2013 , 2020</li>
+              <li>STADIUM: Allianz Arena</li>
+              <li>COUNTRY-CITY: GERMANY - Munich</li>
+              <li>RIVALS: Borussia Dortmund , RB Leipzig , 1. FC Nürnberg , 1. FC Köln , Augsburg , 1. FC Union Berlin</li>
+              <li>UCL-FINALS: 11</li>
+              <li>BEST-PLAYER(S): Franz Beckenbauer , Manuel Neuer , Robert Lewandowski , Gerd Müller , Philipp Lahm , Lothar Matthäus , Karl-Heinz Rummenigge</li>
+              <li>TEAM-UCL-TOP-SCORER: Robert Lewandowski 69 GOALS</li>
+              <li>PARTICIPATIONS: 36 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>BORUSSIA DORTMOND</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 2</li>
+              <li>UCL-WINS: 1</li>
+              <li>HISTORY: 1997</li>
+              <li>STADIUM: Signal Iduna Park</li>
+              <li>COUNTRY-CITY: GERMANY - Dortmund</li>
+              <li>RIVALS: Bayern Munich , Schalke 04 , 1. FC Köln , Borussia Mönchengladbach , VfL Wolfsburg , 1. FC Union Berlin</li>
+              <li>UCL-FINALS: 3</li>
+              <li>BEST-PLAYER(S): Marco Reus , Robert Lewandowski , Mats Hummels , Jadon Sancho</li>
+              <li>TEAM-UCL-TOP-SCORER: Marco Reus 24 GOALS</li>
+              <li>PARTICIPATIONS: 23 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>CHELSEA</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 9</li>
+              <li>UCL-WINS: 2</li>
+              <li>HISTORY: 2012 , 2021</li>
+              <li>STADIUM: Stamford Bridge</li>
+              <li>COUNTRY-CITY: ENGLAND - London</li>
+              <li>RIVALS: Arsenal , Tottenham Hotspur , West Ham United , Fulham , Crystal Palace , Brentford</li>
+              <li>UCL-FINALS: 3</li>
+              <li>BEST-PLAYER(S): Frank Lampard , Didier Drogba , John Terry , Gianfranco Zola , Petr Čech</li>
+              <li>TEAM-UCL-TOP-SCORER: Didier Drogba 36 GOALS</li>
+              <li>PARTICIPATIONS: 20 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>JUVENTUS</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 8</li>
+              <li>UCL-WINS: 2</li>
+              <li>HISTORY: 1985 , 1996</li>
+              <li>STADIUM: Allianz Stadium</li>
+              <li>COUNTRY-CITY: ITALY - Turino</li>
+              <li>RIVALS: Torino , Inter Milan , AC Milan , Napoli , Fiorentina , Genoa , Roma</li>
+              <li>UCL-FINALS: 9</li>
+              <li>BEST-PLAYER(S): Alessandro Del Piero , Gianluigi Buffon , Pavel Nedvěd , Roberto Baggio , Michel Platini</li>
+              <li>TEAM-UCL-TOP-SCORER: Alessandro Del Piero 42 GOALS</li>
+              <li>PARTICIPATIONS: 34 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>INTER MILAN</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 6</li>
+              <li>UCL-WINS: 3</li>
+              <li>HISTORY: 1964 , 1965 , 2010</li>
+              <li>STADIUM: Stadio Giuseppe Meazza</li>
+              <li>COUNTRY-CITY: ITALY - Milano</li>
+              <li>RIVALS: AC Milan , Juventus , Napoli , Fiorentina</li>
+              <li>UCL-FINALS: 7</li>
+              <li>BEST-PLAYER(S): Javier Zanetti , Giuseppe Meazza , Ronaldo Nazário , Sandro Mazzola , Lothar Matthäus</li>
+              <li>TEAM-UCL-TOP-SCORER: Lautaro Martínez 21 GOALS</li>
+              <li>PARTICIPATIONS: 25 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>LIVERPOOL</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 13</li>
+              <li>UCL-WINS: 6</li>
+              <li>HISTORY: 1977 , 1978 , 1981 , 1984 , 2005 , 2019</li>
+              <li>STADIUM: Anfield</li>
+              <li>COUNTRY-CITY: ENGLAND - Liverpool</li>
+              <li>RIVALS: Manchester United , Everton , Arsenal , Chelsea</li>
+              <li>UCL-FINALS: 10</li>
+              <li>BEST-PLAYER(S): Steven Gerrard , Kenny Dalglish , Ian Rush , Mohamed Salah , Robbie Fowler , Luis Suárez</li>
+              <li>TEAM-UCL-TOP-SCORER: Mohamed Salah 47 GOALS</li>
+              <li>PARTICIPATIONS: 25 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>MANCHSESTER CITY</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 3</li>
+              <li>UCL-WINS: 1</li>
+              <li>HISTORY: 2023</li>
+              <li>STADIUM: Etihad Stadium</li>
+              <li>COUNTRY-CITY: ENGLAND - Manchester</li>
+              <li>RIVALS: Manchester United , Liverpool , Chelsea , Arsenal , Tottenham Hotspur , Leeds United , Newcastle United</li>
+              <li>UCL-FINALS: 2</li>
+              <li>BEST-PLAYER(S): Sergio Agüero , Kevin De Bruyne , David Silva , Yaya Touré , Erling Haaland</li>
+              <li>TEAM-UCL-TOP-SCORER: Sergio Agüero 36 GOALS</li>
+              <li>PARTICIPATIONS: 16 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>MANCHSESTER UNITED</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 6</li>
+              <li>UCL-WINS: 3</li>
+              <li>HISTORY: 1968 , 1999 , 2008</li>
+              <li>STADIUM: Old Trafford</li>
+              <li>COUNTRY-CITY: ENGLAND - Manchester</li>
+              <li>RIVALS: Liverpool , Manchester City , Arsenal , Chelsea , Tottenham Hotspur , Leeds United , Newcastle United , Everton , Fulham , Brighton & Hove Albion , Crystal Palace</li>
+              <li>UCL-FINALS: 5</li>
+              <li>BEST-PLAYER(S): George Best , Eric Cantona , Ryan Giggs , Paul Scholes , Cristiano Ronaldo , Wayne Rooney</li>
+              <li>TEAM-UCL-TOP-SCORER: Ruud van Nistelrooy 35 GOALS</li>
+              <li>PARTICIPATIONS: 23 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>NABOLI</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 1</li>
+              <li>UEL-WINS: 1</li>
+              <li>HISTORY-EUROPA-LEAGUE: 1989</li>
+              <li>STADIUM: Stadio Diego Armando Maradona</li>
+              <li>COUNTRY-CITY: ITALY - Napoli</li>
+              <li>RIVALS: Juventus , Roma , AC Milan , Fiorentina , Salernitana , Lazio , Inter Milan</li>
+              <li>UCL-FINALS: 0</li>
+              <li>BEST-PLAYER(S): Diego Maradona , Dries Mertens , Marek Hamšík , Lorenzo Insigne</li>
+              <li>TEAM-UCL-TOP-SCORER: Dries Mertens 16 GOALS</li>
+              <li>PARTICIPATIONS: 11 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>NEW CASTLE</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 0</li>
+              <li>UCL-WINS: 0</li>
+              <li>HISTORY: N/A </li>
+              <li>STADIUM: St. James' Park</li>
+              <li>COUNTRY-CITY: ENGLAND - Newcastle Upon Tyne</li>
+              <li>RIVALS: Sunderland , Middlesbrough , Leeds United , Sheffield United , Aston Villa</li>
+              <li>UCL-FINALS: 0</li>
+              <li>BEST-PLAYER(S): Alan Shearer , Kevin Keegan , Peter Beardsley , Paul Gascoigne</li>
+              <li>TEAM-UCL-TOP-SCORER: Alan Shearer 6 GOALS</li>
+              <li>PARTICIPATIONS: 5 times</li>
+
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>PARIS-SAINT-GERMAN</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 3</li>
+              <li>UCL-WINS: 1</li>
+              <li>HISTORY: 2025</li>
+              <li>STADIUM: Parc des Princes</li>
+              <li>COUNTRY-CITY: FRANCE - Paris</li>
+              <li>RIVALS: Olympique de Marseille , Olympique Lyonnais , AS Monaco , Stade Rennais , Lille OSC , Nice</li>
+              <li>UCL-FINALS: 2</li>
+              <li>BEST-PLAYER(S): Zlatan Ibrahimović , Neymar Jr. , Kylian Mbappé , Edinson Cavani , Ángel Di María</li>
+              <li>TEAM-UCL-TOP-SCORER: Kylian Mbappé 42 GOALS</li>
+              <li>PARTICIPATIONS: 18 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>REAL MADRID</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 22</li>
+              <li>UCL-WINS: 15</li>
+              <li>HISTORY: 1956 , 1957 , 1958 , 1959 , 1960 , 1966 , 1998 , 2000 , 2002 , 2014 , 2016 , 2017 , 2018 ,
+                2022 , 2024</li>
+              <li>STADIUM: Estadio Santiago Bernabeu</li>
+              <li>COUNTRY-CITY: SPAIN - Madrid</li>
+              <li>RIVALS: FC Barcelona , Atlético Madrid , Sevilla , Real Betis , Athletic Bilbao</li>
+              <li>UCL-FINALS: 18</li>
+              <li>BEST-PLAYER(S): Alfredo Di Stéfano , Cristiano Ronaldo , Raúl González , Ferenc Puskás , Iker Casillas ,
+                Sergio Ramos</li>
+              <li>TEAM-UCL-TOP-SCORER: Cristiano Ronaldo 105 GOALS</li>
+              <li>PARTICIPATIONS: 56 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>ROMA</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 1</li>
+              <li>UEFA-CONFERENCE-LEAGUE-WINS: 1</li>
+              <li>HISTORY: 2022</li>
+              <li>STADIUM: Stadio Olimpico</li>
+              <li>COUNTRY-CITY: ITALY - Rome</li>
+              <li>RIVALS: Lazio , Juventus , AC Milan , Fiorentina , Napoli</li>
+              <li>UCL-FINALS: 1</li>
+              <li>BEST-PLAYER(S): Francesco Totti , Daniele De Rossi , Gabriel Batistuta , Bruno Conti</li>
+              <li>TEAM-UCL-TOP-SCORER: Francesco Totti 17 GOALS</li>
+              <li>PARTICIPATIONS: 14 times</li>
+            </ul>
+          </small>
+        </details>
+        <details>
+          <summary>TOTTENHAM</summary>
+          <small>
+            <ul>
+              <li>EUROPIAN-COMPTIONS-WON: 4</li>
+              <li>UEL-WINS: 3</li>
+              <li>HISTORY-EUROPA-LEAGUE: 1972 , 1984 , 2025</li>
+              <li>STADIUM: Tottenham Hotspur Stadium</li>
+              <li>COUNTRY-CITY: ENGLAND - London</li>
+              <li>RIVALS: Arsenal , Chelsea , West Ham United ,  Fulham , Crystal Palace , Luton Town , Brentford , Manchester City , Nottingham Forest , Manchester United , Liverpool</li>
+              <li>UCL-FINALS: 1</li>
+              <li>BEST-PLAYER(S): Harry Kane , Gareth Bale , Ledley King , Glenn Hoddle , Paul Gascoigne , Luka Modrić</li>
+              <li>TEAM-UCL-TOP-SCORER: Harry Kane 21 GOALS</li>
+              <li>PARTICIPATIONS: 7 times</li>
+            </ul>
+          </small>
+        </details>
+    </details>
+    </i>
+    </Fieldset>
+
+  </div>
+
+
+
+  <div id="random-result3" style="color: chartreuse;">
+    <details id="D-predecting3">
+
+<audio id="drum-roll" src="https://www.soundjay.com/button/sounds/button-29.mp3" preload="auto" hidden></audio>
+
+<audio id="ding" src="the-sound-of-jumping-on-a-trampoline-or-over-a-wall.mp3" preload="auto" hidden></audio>
+
+      <summary>Predicting result or match begin</summary>
+      <small>
+        <label for="R-predecting3">Predicting match result</label>
+        <input id="R-predecting3" type="radio" name="choice" value="predecting">
+        <br>
+        <label for="match-begins3">Match begins in a specific result</label>
+        <input id="match-begins3" type="radio" name="choice" value="begins">
+      </small>
+
+      <br><hr><br>
+      <button id="go-btn">GO</button>
+
+      
+    </details>
+    
+  
+
+  <div id="overlay3" class="overlay3">
+    <div class="popup3">
+      <button class="close3" onclick="closePopup3()">X</button>
+      <h3>Random Result</h3>
+      <p id="popup-result3"></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="popup">
+
+
+      <style>
+        .popup {
+          background-image: url('f4a229d0-ecbf-4bcc-a3c8-3975c3c463ea.jpeg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: rgba(255, 255, 255, 0.5);
+
+        }
+      </style>
+
+      <span class="close" onclick="closePopup()" style="float: right;"><b style="width: 20px;">X</b></span>
+      <br>
+      <br>
+      <hr>
+      <h3 style="color: rgb(9, 2, 234);">Selected Teams</h3>
+      <hr>
+      <label for="display_team1"
+        style="color:  rgb(9, 2, 234);font-style: italic; font-family: 'Courier New', Courier, monospace;">team <span
+          style="color: black;">1<span style="color: white;">:</span></span>
+      </label>
+      <p id="display_team1" style="color: palegoldenrod;">
+      <p id="team1-color" style="color: palegoldenrod;"></p>
+      </p>
+      <label for="display_team2"
+        style="color:  rgb(9, 2, 234); font-style: italic; font-family: 'Courier New', Courier, monospace;">team <span
+          style="color: black;">2<span style="color: white;">:</span></span>
+      </label>
+      <p id="display_team2" style="color: palegoldenrod;">
+      <p id="team2-color" style="color: palegoldenrod;"></p>
+      </p>
+      <hr>
+      <h4 style="color:  rgb(9, 2, 234);">Matchup <span style="color:white;">:</span></h4>
+
+      <u style="color: cornflowerblue;"><i>
+          <p id="team1vsteam2"></p>
+          <b><p id="derby-name-popup"></p></b>
+        </i></u>
+
+    </div>
+
+         <style>
+    /* Make the video cover the whole page */
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* makes it fill the screen without stretching */
+      z-index: -1; /* sends it behind all other content */
+    }
+
+    /* Optional styling for your text/content */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white; /* text color */
+      background-color: rgba(0, 0, 0, 0.5); /* fallback background color */
+    }
+  </style>
+
+
+
+  <!-- Background video -->
+  <video autoplay muted loop>
+    <source src="SSvid.net--youtube-video-LwKqcM4E3J8_1080.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+  <audio id="ding" src="https://www.soundjay.com/button/sounds/button-16.mp3" preload="auto" hidden></audio>
+
+  
+    <div>
+      <div class="teams-container">
+
+                  
+
+
+        <div class="team" style="background-image: url(champions-league-4K-wallpaper.jpeg); border-radius: 10px; padding: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  filter: opacity(0.86); position: relative;  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">
+
+
+          <img id="team1-logo" src="" alt="" width="200" height="200">
+          <p><span style="color: rgb(208, 255, 0); font-style: italic;">team 1<span style="color: white;">:</span>
+            </span> <span id="team1-name" style="color: rgb(255, 113, 4); font-weight: bold;"></span></p> 
+          <p><u style="color: cornflowerblue;"><span style="color:#ff9d00;">UCL <span style="color: white;">:</span>
+              </span> <span id="ucl-team1" style="color:#ff0000;"></span> <br><br> <span id="team1-nikename"
+                style="color: yellow;"></span></u></p>
+          <p id="player1" style="color: #ff0000;"></p>
+          <p><span id="team1-participations" style="color: rgb(211, 2, 234);">PARTICIPATIONS:</span> </p>
+          <p id="team1-banner" style="color: rgb(211, 2, 234);"></p>
+          <p  style="color: rgb(211, 2, 234);">PLAYER TO WATCH:<span id="team2-playerto"></span></p>
+
+        </div>
+
+         <p id="derby-name" 
+     style="color: rgb(255, 55, 0); 
+            text-align: center; 
+            font-weight: bold; 
+            font-style: italic; 
+            text-decoration: underline;
+            width: 100%;
+            margin-bottom: 20px;">
+  </p>
+
+        <div class="team" style="background-image: url(champions-league-4K-wallpaper.jpeg); border-radius: 10px; padding: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); filter: opacity(0.86); position: relative; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">
+          <img id="team2-logo" src="" alt="" width="200" height="200">
+          <p><span style="color:  rgb(208, 255, 0); font-style: italic;">team 2 <span style="color: white;">:</span>
+            </span> <span id="team2-name" style="color: rgb(255, 113, 4); font-weight: bold;"></span></p>
+          <p><u style="color: cornflowerblue;"><span style="color:#ff9d00;">UCL <span style="color: white;">:</span>
+              </span> <span id="ucl-team2" style="color:#ff0000;"></span> <br><br> <span id="team2-nikename"
+                style="color: yellow;"></span></u></p>
+          <p id="player2" style="color: #ff0000;"></p>
+          <p><span id="team2-participations" style="color: rgb(211, 2, 234);">PARTICIPATIONS:</span> </p>
+          <p id="team2-banner" style="color: rgb(211, 2, 234);"></p>
+          <p  style="color: rgb(211, 2, 234);">PLAYER TO WATCH: <span id="team1-playerto"></span></p>
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+  </div>
+
+  </div>
+  <script src="genrator.js"></script>
+  </div>
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>

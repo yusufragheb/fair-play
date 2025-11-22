@@ -1,0 +1,591 @@
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Popup box */
+    .popup {
+      width: 450px;
+      height: 450px;
+      background: white;
+      border-radius: 30px;
+      padding: 40px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: opacity(0.9);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.5s ease-in-out;
+      
+
+    }
+
+    .close {
+      cursor: pointer;
+      color: red;
+      font-weight: bold;
+    }
+
+    .teams-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .team {
+      text-align: center;
+      width: 200px;
+    }
+
+    .team img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .team p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+
+    body {
+      background-image: url('wp11954242-champions-league-stadium-wallpapers.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      position: relative;
+
+    }
+
+input[type="text"], input[type="number"] {
+padding: 10px;
+border: 1px solid #ccc;
+outline: none;
+font-size: 1em;
+transition: box-shadow 0.3s ease;
+border-radius: 20px;
+box-shadow: 0 0 20px #6581c2, 0 0 30px #6581c2;
+border-color: #6581c2;
+  
+}
+
+
+
+input[type="number"]:focus{
+  box-shadow: 0 0 40px #004cff, 0 0 50px #014edd;
+  border-color: #0f49f5;
+}
+
+input[type="text"]:focus {
+box-shadow: 0 0 40px #9500ff, 0 0 50px #9507fb;
+border-color: #8e03f2;
+}
+
+
+#fair-play-title{
+  font-size: 65px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background: linear-gradient(90deg, #1f00eb, #004cff, #fff , #8503ff ,#fff ,#033ff4);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 7s infinite linear;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  background-color: #222;
+}
+
+@keyframes shine {
+  from { background-position: 200%; }
+  to { background-position: -200%; }
+}
+
+    button {
+      background-color: #2166ae;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.56s ease;
+      align-items: center;
+      text-align: center;
+      text-decoration: wavy;
+      filter: opacity(0.9);
+
+    }
+
+    button:hover {
+      background-color: #13ae20;
+      transform: scale(1.35);
+      filter: opacity(0.9);
+    }
+
+    
+    #legs:hover {
+      background-color: #8113d1;
+      transform: scale(1.35);
+      filter: opacity(0.9);
+    }
+
+    #pickup-and-draws {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.6);
+      align-items: center;
+      background-image: url('wp11954242-champions-league-stadium-wallpapers.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: opacity(0.9);
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+    }
+
+    #teams-list {
+
+      align-items: center;
+      border: 2px solid #000000;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 15px auto;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.6);
+      filter: opacity(0.9);
+      color: rgb(43, 145, 234);
+      justify-content: flex-start;
+      margin-left: 0;
+      margin-right: auto;
+      background-image: url("wp4430266-ucl-wallpapers.jpg");
+
+
+
+    }
+
+    #teams-form {
+
+      align-items: center;
+      border: 2px solid #000000;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.6);
+      filter: opacity(0.9);
+      color: rgb(43, 145, 234);
+      margin-left: 0;
+      
+
+    }
+
+    #D-list-teams {
+      margin-left: 0;
+      margin-right: auto;
+      width: fit-content;
+      align-items: center;
+      
+    }
+
+#random-result{
+  align-items: right;
+   margin-left: auto;
+    margin-right: 0;
+     border: 3px solid #000000;
+      border-radius: 50px;
+      padding: 45px;
+      margin: 40px auto;
+      max-width: 350px;
+      background-color: rgba(255, 255, 255, 0.5);
+      filter: opacity(0.9);
+      color: rgb(43, 145, 234);
+}
+
+#D-predecting3{
+      align-items: center;
+      border: 2.5px solid #000000;
+      border-radius: 45px;
+      padding: 35px;
+      margin: 30px auto;
+      max-width: 354px;
+      background-color: rgba(255, 255, 255, 0.6);
+      filter: opacity(0.9);
+      color: rgb(5, 12, 213);
+      margin-right: 0;
+      background-image:url("k4D19Jz-champions-league-wallpapers.jpg") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: opacity(0.9);
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+    input[type="checkbox"] {
+      transform: scale(1.5);
+      margin-right: 10px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      text-decoration: wavy;
+      color: #19dfa0;
+      hover: #4000ff;
+
+    }
+
+    #distinct-label {
+      font-size: 1.2em;
+      margin-left: 10px;
+      cursor: pointer;
+      align-items: center;
+      text-align: center;
+      text-decoration: wavy;
+      color: #ff0000;
+      hover: #4000ff;
+    }
+
+    .overlay2 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .popup2 {
+      width: 450px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-image: url(e01c7c8d-c074-4d67-bd7f-8af5b78b238f.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      animation: fadeIn 0.5s ease-in-out;
+      
+    }
+
+    .close2 {
+      cursor: pointer;
+      float: right;
+      color: red;
+      font-weight: bold;
+    }
+
+    form {
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+    }
+
+
+      .overlay3 {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 75%; height: 75%;
+      background-image: url();
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup3 {
+      width: 60%; height: 50%;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.9);
+      background-image: url("126437114-real-madrid-or-bayern-munich.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: opacity(0.9);
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      box-shadow: 0 0 20px #0ff;
+      justify-content: center;
+      flex-direction: column;
+      transition: all 0.4s ease;
+      animation: fadeIn 0.5s ease-in-out;
+      
+    }
+    .popup3 button.close3 {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* تأثير القرعة */
+.drawing {
+  animation: flicker 0.25s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { text-shadow: 0 0 8px #0ff; transform: scale(1); }
+  100% { text-shadow: 0 0 25px #00f; transform: scale(1.05); }
+}
+
+/* الفريقين */
+.win-team1 {
+  background: radial-gradient(circle, #0a2a66 40%, #001133);
+  box-shadow: 0 0 50px #7700ff, 0 0 100px #a600ff;
+}
+
+.win-team2 {
+  background: radial-gradient(circle, #660a0a 40%, #220000);
+  box-shadow: 0 0 50px #ff4444, 0 0 100px #ff0000;
+}
+
+/* وميض عند الفوز */
+.flash {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+  animation: flashAnim 0.6s ease-out;
+}
+
+@keyframes flashAnim {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0; transform: scale(1.4); }
+}
+
+    
+   details,summary{
+    color: rgb(222, 7, 222);
+   }
+
+
+    .overlay4 {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      background-image: url();
+      
+    }
+
+    .popup4 {
+      width: 400px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      background-image: url("126437258-uefa-champions-league-final.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: opacity(0.9);
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.5s ease-in-out;
+      
+      
+    }
+    .popup4 button.close4 {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 1;
+      
+    }
+
+    .close4 {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 1;
+
+    }
+
+    #draw-popup-result{
+      font-size: 2rem;
+      margin: 20px 0;
+      min-width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    #draw-btn
+    {
+       transition: background 0.3s;
+    }
+
+
+    .winner-glow {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #0ff, 0 0 60px #0ff;
+  }
+}
+
+/* confetti */
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  animation: fall linear forwards;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* --------------- أنيميشن القرعة بالكامل --------------- */
+
+/* 1. كلاس الاهتزاز (أثناء السحب) */
+.team.is-shuffling {
+  animation: shuffle 0.1s infinite alternate;
+  box-shadow: 0 0 25px #00ffff, 0 0 45px #ffffff;
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+/* تعريف أنيميشن الاهتزاز */
+@keyframes shuffle {
+  0% { 
+    transform: translate(-2px, 2px) rotate(-1deg) scale(1.05); 
+  }
+  100% { 
+    transform: translate(2px, -2px) rotate(1deg) scale(1.05); 
+  }
+}
+
+/* 2. كلاس الاحتفال (بعد السحب) */
+.team-reveal {
+  animation: reveal-animation 0.6s ease-out;
+}
+
+@keyframes reveal-animation {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #ffee00, 0 0 60px #ffffff;
+  }
+  100% {
+    transform: scale(1.0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* 3. كلاس احتفال النص (في البوب أب) */
+.text-reveal {
+  animation: text-reveal-animation 0.6s ease-out;
+}
+
+@keyframes text-reveal-animation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+    color: #00ffff;
+  }
+  60% {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #fff;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+
+/* --------------- أنيميشن دوري أبطال أوروبا المبسّط --------------- */
+
+/* الكلاس الذي يُضاف أثناء السحب وبعد ظهور النتيجة مباشرة */
+.team.is-active-animation {
+  /* أنيميشن الاهتزاز اللطيف والتوهج */
+  animation: ucl-draw-animation 0.8s infinite alternate ease-in-out;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.7), 0 0 45px rgba(255, 255, 0, 0.5); /* توهج أزرق وذهبي */
+  transform: scale(1.05); /* تكبير بسيط أثناء النشاط */
+  z-index: 10; /* لضمان ظهوره فوق العناصر الأخرى */
+}
+
+/* تعريف أنيميشن دوري أبطال أوروبا */
+@keyframes ucl-draw-animation {
+  0% {
+    transform: translate(-3px, 3px) rotate(-1.5deg) scale(1.05); /* حركة خفيفة */
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1.08); /* توسع لحظي (تأثير "الإنفجار") */
+    box-shadow: 0 0 50px #00bfff, 0 0 70px #ffff00; /* توهج أقوى */
+  }
+  100% {
+    transform: translate(3px, -3px) rotate(1.5deg) scale(1.05); /* حركة خفيفة عكسية */
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
+  }
+}
+
