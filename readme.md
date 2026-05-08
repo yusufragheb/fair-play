@@ -3,17 +3,16 @@
 <br>
 <h1>⚽ FAIR PLAY™</h1>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=200&section=header&text=Fair%20Play&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=200&section=header&text=FِAIR%20PLAY&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 
 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=220&section=header&text=FAIR%20PLAY™&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
 
 
 </div>
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football"/>
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football;UCL+Game"/>
 
 </div>
 
