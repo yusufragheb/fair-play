@@ -2,31 +2,20 @@
 
 <br>
 
-⚽ FAIR PLAY™
-Random Football Team Generator
+# ⚽ FAIR PLAY™
+### Smart Random Football Team Selector
 
+A simple and fun web application that randomly selects a football team from a curated list of famous clubs.
 
+Perfect for games, challenges, or fair decisions between friends.
 
+---
 
-
-
-
-
-🎮 About The Project
-
-Fair Play™ is a simple web application designed to randomly select a football team from a list of famous European clubs.
-
-Instead of arguing about which team to choose, the app makes the decision fairly and randomly.
-
-The project is built using HTML, CSS, and JavaScript and runs directly in the browser with no installation required.
-
-Perfect for:
-
-⚽ football challenges
-🎮 fun games with friends
-🎲 random team selection
-🏆 fair decision making
-<br>
+![HTML](https://img.shields.io/badge/HTML-5-orange?style=for-the-badge)
+![CSS](https://img.shields.io/badge/CSS-3-blue?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stable-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 <br>
 
 <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=900&size=42&duration=3000&pause=800&color=2F80ED&center=true&vCenter=true&width=600&lines=⚽+FAIR+PLAY™;Random+Team+Generator;Fair.+Fast.+Football." alt="Typing SVG" />
