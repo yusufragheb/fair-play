@@ -2,7 +2,14 @@
 
 <br>
 
-<img src="logo.png" width="120" style="border-radius: 20px;" alt="Fair Play Logo"/>
+⚽ FAIR PLAY™
+Random Football Team Generator
+
+
+
+
+
+
 
 <br>
 <br>
