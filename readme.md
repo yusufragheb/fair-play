@@ -409,3 +409,4 @@ This project is open source and available under the [MIT License](LICENSE).
 <img src="https://capsule-render.vercel.app/api?type=waving&color=2F80ED&height=100&section=footer" alt="footer wave"/>
 
 </div>
+<div align="center">
