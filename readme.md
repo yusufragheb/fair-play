@@ -13,7 +13,7 @@
 </div>
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football;UCL+Game"/>
+
 
 </div>
 
