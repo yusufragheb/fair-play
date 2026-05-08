@@ -21,7 +21,7 @@
 <img width="450" height="450" alt="pngkit_champions-league-png_10092892" src="https://github.com/user-attachments/assets/e5c21207-ea6a-4feb-b493-8581661f3b38" />
 
 
-# ⚽ FAIR PLAY™
+# ⚽
 
 ### 🎮 Random Football Team Generator
 
