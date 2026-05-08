@@ -25,12 +25,15 @@
 
 ### 🎮 Random Football Team Generator
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=550&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;UCL+Game;created+by+Yusuf+Ragheb;FAIR+PLAY;AVALABLE+NOW;ONLINE">
+<div align="center">
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=550&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=900&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;UCL+Game;created+by+Yusuf+Ragheb;FAIR+PLAY;AVAILABLE+NOW;ONLINE">
 
-<br>
+<br><br>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly)
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=1000&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly">
+
+</div>
 
 <br>
 
