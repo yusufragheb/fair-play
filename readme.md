@@ -2,8 +2,7 @@
 
 <br>
 
-<img src="<img width="732" height="725" alt="pngkit_champions-league-png_10092892" src="https://github.com/user-attachments/assets/221bfe69-6c1c-4d6a-ba2c-c5eb86dfc6ce" />
-" width="180">
+<img src="width="732" height="725" alt="pngkit_champions-league-png_10092892" src="https://github.com/user-attachments/assets/221bfe69-6c1c-4d6a-ba2c-c5eb86dfc6ce" width="90">
 
 # ⚽ FAIR PLAY™
 
