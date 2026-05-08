@@ -6,11 +6,11 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=200&section=header&text=FِAIR%20PLAY&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 <div align="center">
 
-
+<br>
 
 🔗 https://yusufragheb.github.io/fair-play
 
-
+<br><br>
 
 </div>
 <div align="center">
