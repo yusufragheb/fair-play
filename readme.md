@@ -35,7 +35,7 @@
 
 <br><br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=1000&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly">
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=1000&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly">
 
 </div>
 
