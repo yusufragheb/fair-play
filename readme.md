@@ -91,4 +91,35 @@ This ensures **fair and unbiased selection** every time.
 
 ---
 
+
+---
+
+# 🛠 Technologies Used
+
+| Technology | Purpose |
+|------------|--------|
+HTML | Page structure |
+CSS | Styling and design |
+JavaScript | Random selection logic |
+
+---
+
+# ▶ Run The Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yusufragheb/fair-play.git
+
+
+#fair-play-title{
+  font-size: 65px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(90deg,#1f00eb,#004cff,#fff,#8503ff,#fff,#033ff4);
+  background-size:200%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shine 7s infinite linear;
+}
+
 # 🖥 Project Structure
