@@ -7,7 +7,8 @@
 
 
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=200&section=header&text=⚽%20FAIR%20PLAY™&fontSize=60&fontColor=ffffff&animation=twinkling"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=220&section=header&text=FAIR%20PLAY™&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38"/>
+
 
 </div>
 <div align="center">
