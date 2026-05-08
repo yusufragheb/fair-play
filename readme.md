@@ -29,6 +29,10 @@
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/yusufragheb/fair-play/main/logo.png" width="150">
+
+<br><br>
+
 <img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=550&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=900&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;UCL+Game;created+by+Yusuf+Ragheb;FAIR+PLAY;AVAILABLE+NOW;ONLINE">
 
 <br><br>
