@@ -2,13 +2,14 @@
 
 <br>
 
-<img src="logo.png" width="180">
+<img src="<img width="732" height="725" alt="pngkit_champions-league-png_10092892" src="https://github.com/user-attachments/assets/221bfe69-6c1c-4d6a-ba2c-c5eb86dfc6ce" />
+" width="180">
 
 # ⚽ FAIR PLAY™
 
 ### 🎮 Random Football Team Generator
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=600&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;created+by+Yusuf+Ragheb;FAIR+PLAY;AVALABLE+NOW+ONLINE">
+<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=600&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;created+by+Yusuf+Ragheb;FAIR+PLAY;AVALABLE+NOW;ONLINE">
 
 
 <br>
