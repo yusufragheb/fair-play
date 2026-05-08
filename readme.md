@@ -5,7 +5,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=200&section=header&text=Fair%20Play&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football)
+
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=200&section=header&text=⚽%20FAIR%20PLAY™&fontSize=60&fontColor=ffffff&animation=twinkling"/>
+
+</div>
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football"/>
@@ -20,7 +24,7 @@
 
 ### 🎮 Random Football Team Generator
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=600&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;created+by+Yusuf+Ragheb;FAIR+PLAY;AVALABLE+NOW;ONLINE">
+<img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&weight=550&size=26&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Random+Football+Team+Generator;Fair+Decision+Maker;Fun+Football+Challenge+Tool;created+by+Yusuf+Ragheb;FAIR+PLAY;AVALABLE+NOW;ONLINE">
 
 
 <br>
