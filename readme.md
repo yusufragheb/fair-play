@@ -16,7 +16,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=900&size=42&duration=3000&pause=800&color=2F80ED&center=true&vCenter=true&width=600&lines=⚽+FAIR+PLAY™;Random+Team+Generator;Fair.+Fast.+Football." alt="Typing SVG" />
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=40&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=600&lines=FAIR+PLAY™;Random+Team+Generator;Fair.+Fast.+Football)
 
 <br>
 
@@ -82,7 +82,7 @@ Whether you're settling a debate with friends, picking a team for a FIFA session
 ║                                      ║
 ║   ┌──────────────────────────────┐   ║
 ║   │                              │   ║
-║   │      🏆  Real Madrid         │   ║
+║   │      🏆  BARCELONA           │   ║
 ║   │                              │   ║
 ║   └──────────────────────────────┘   ║
 ║                                      ║
