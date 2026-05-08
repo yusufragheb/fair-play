@@ -9,6 +9,7 @@
 <br>
 
 🔗 https://yusufragheb.github.io/fair-play
+### 🔗 **[Play FAIR PLAY NOW Live](https://yusufragheb.github.io/fair-play) 🚀**
 
 <br><br>
 
@@ -73,8 +74,10 @@
 <br>
 
 ## 📖 About The Project
+<div align="left">
+  > *"Stop arguing. Start playing."*
+</div>
 
-> *"Stop arguing. Start playing."*
 
 **Fair Play™** is a sleek, browser-based **Random Football Team Generator** that takes the bias out of team selection. Built with zero dependencies using pure **HTML, CSS, and JavaScript** — it runs instantly on any device, anywhere, with no setup required.
 
