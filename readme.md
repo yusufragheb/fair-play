@@ -1,7 +1,10 @@
 <div align="center">
 
 <br>
+<h1>⚽ FAIR PLAY™</h1>
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:004cff,100:8503ff&height=200&section=header&text=Fair%20Play&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Fair.+Fast.+Football)
 
 
 <img width="450" height="450" alt="pngkit_champions-league-png_10092892" src="https://github.com/user-attachments/assets/e5c21207-ea6a-4feb-b493-8581661f3b38" />
@@ -17,9 +20,6 @@
 <br>
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly)
-## 🐍 Contribution Snake
-
-![Snake animation](https://raw.githubusercontent.com/yusufragheb/yusufragheb/output/github-contribution-grid-snake.svg)
 
 <br>
 
