@@ -8,8 +8,7 @@
 
 <br>
 
-🔗 https://yusufragheb.github.io/fair-play
-### 🔗 **[Play FAIR PLAY NOW Live](https://yusufragheb.github.io/fair-play) 🚀**
+### 🔗 **[𝑷𝒍𝒂𝒚 𝑭𝑨𝑰𝑹 𝑷𝑳𝑨𝒀 𝑵𝒐𝒘 𝑳𝒊𝒗𝒆](https://yusufragheb.github.io/fair-play) 🚀**
 
 <br><br>
 
