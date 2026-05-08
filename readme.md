@@ -16,7 +16,10 @@
 
 <br>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=800&size=40&duration=3000&pause=1000&color=2F80ED&center=true&vCenter=true&width=600&lines=FAIR+PLAY™;Random+Team+Generator;Fair.+Fast.+Football)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=45&duration=2500&pause=900&color=00E5FF&center=true&vCenter=true&width=700&lines=⚽+FAIR+PLAY™;Random+Football+Team+Generator;Choose+Your+Team+Fairly)
+## 🐍 Contribution Snake
+
+![Snake animation](https://raw.githubusercontent.com/yusufragheb/yusufragheb/output/github-contribution-grid-snake.svg)
 
 <br>
 
