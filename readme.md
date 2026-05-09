@@ -363,10 +363,10 @@ open index.html
 - [x] ⚽ Core random team generator
 - [x] 🎨 Animated gradient logo
 - [x] 📱 Basic responsive design
-- [ ] 🏅 Display official team logos
+- [x] 🏅 Display official team logos
+- [x] 🔊 Sound effects on generation
 - [ ] 🌍 Expand to 50+ clubs worldwide
 - [ ] 🎲 Tournament bracket mode
-- [ ] 🔊 Sound effects on generation
 - [ ] 🌐 PWA support — works offline
 - [ ] 🎮 Online multiplayer pick mode
 - [ ] 🌙 Dark / Light theme toggle
@@ -400,13 +400,6 @@ open index.html
 
 ---
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-<br>
-
----
 
 <div align="center">
 
